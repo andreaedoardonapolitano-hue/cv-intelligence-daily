@@ -1,0 +1,25 @@
+{
+  "title": "CV Intelligence Daily",
+  "subtitle": "Iveco Group, Tata Motors e FPT Industrial in 20 minuti",
+  "description": "Ogni mattina dal lunedì al venerdì: mercato, concorrenza, portafoglio IVECO, una lezione tecnica sui componenti e gli insight strategici su Iveco Group, Tata Motors e FPT Industrial. Livello tecnico alto, solo fonti pubbliche. Voce sintetica generata con AI.",
+  "author": "CV Intelligence Daily",
+  "owner_name": "Andrea Edoardo Napolitano",
+  "owner_email": "andreaedoardo.napolitano@gmail.com",
+  "language": "it",
+  "category": "Business",
+  "subcategory": "Management",
+  "explicit": false,
+  "site_url": "https://andreaedoardonapolitano-hue.github.io/cv-intelligence-daily",
+  "elevenlabs": {
+    "voice_id": "DA_COMPILARE",
+    "model_id": "eleven_multilingual_v2",
+    "output_format": "mp3_44100_64",
+    "voice_settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.15,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    }
+  }
+}

@@ -1,0 +1,75 @@
+name: Genera episodio
+
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/**.md"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Prova senza ElevenLabs (audio muto)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-episode
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa dipendenze
+        run: |
+          pip install requests
+          which ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+
+      - name: Genera audio e feed
+        id: build
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python tools/build_episode.py --dry-run
+          else
+            python tools/build_episode.py
+          fi
+
+      - name: Conserva l'audio di prova
+        if: inputs.dry_run == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: prova
+          path: |
+            build/*.mp3
+            docs/feed.xml
+
+      - name: Pubblica gli MP3 come release
+        if: steps.build.outputs.built != '' && inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for d in ${{ steps.build.outputs.built }}; do
+            gh release create "ep-$d" "build/cvid-$d.mp3" \
+              --title "Episodio $d" --notes "CV Intelligence Daily del $d" --latest
+          done
+
+      - name: Aggiorna il feed
+        if: inputs.dry_run != true
+        run: |
+          git config user.name "cvid-bot"
+          git config user.email "cvid-bot@users.noreply.github.com"
+          git add episodes.json docs/feed.xml
+          git diff --cached --quiet || git commit -m "Feed aggiornato: ${{ steps.build.outputs.built }}"
+          git pull --rebase origin main
+          git push

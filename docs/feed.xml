@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CV Intelligence Daily</title>
+    <link>https://andreaedoardonapolitano-hue.github.io/cv-intelligence-daily/</link>
+    <atom:link href="https://andreaedoardonapolitano-hue.github.io/cv-intelligence-daily/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>it</language>
+    <description>Ogni mattina dal lunedì al venerdì: mercato, concorrenza, portafoglio IVECO, una lezione tecnica sui componenti e gli insight strategici su Iveco Group, Tata Motors e FPT Industrial. Livello tecnico alto, solo fonti pubbliche. Voce sintetica generata con AI.</description>
+    <itunes:subtitle>Iveco Group, Tata Motors e FPT Industrial in 20 minuti</itunes:subtitle>
+    <itunes:summary>Ogni mattina dal lunedì al venerdì: mercato, concorrenza, portafoglio IVECO, una lezione tecnica sui componenti e gli insight strategici su Iveco Group, Tata Motors e FPT Industrial. Livello tecnico alto, solo fonti pubbliche. Voce sintetica generata con AI.</itunes:summary>
+    <itunes:author>CV Intelligence Daily</itunes:author>
+    <itunes:owner>
+      <itunes:name>Andrea Edoardo Napolitano</itunes:name>
+      <itunes:email>andreaedoardo.napolitano@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://andreaedoardonapolitano-hue.github.io/cv-intelligence-daily/cover.jpg"/>
+    <image><url>https://andreaedoardonapolitano-hue.github.io/cv-intelligence-daily/cover.jpg</url><title>CV Intelligence Daily</title><link>https://andreaedoardonapolitano-hue.github.io/cv-intelligence-daily/</link></image>
+    <itunes:category text="Business"><itunes:category text="Management"/></itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+
+  </channel>
+</rss>
