@@ -11,26 +11,27 @@ Podcast quotidiano (lunedì–venerdì) su Iveco Group, Tata Motors e FPT Indust
 
 ## Configurazione (una volta sola)
 
-### 1. ElevenLabs
-- Crea la voce con *Voice Design* e salvala in *My Voices*. Copia il suo **Voice ID** (menu della voce → *Copy voice ID*).
-- In *Profilo → API Keys* crea una chiave API.
+### 1. Google Cloud Text-to-Speech
+- Su [console.cloud.google.com](https://console.cloud.google.com) crea un progetto (es. `cv-intelligence-daily`) e collega un account di fatturazione.
+- *API e servizi → Libreria*: attiva **Cloud Text-to-Speech API**.
+- *API e servizi → Credenziali → Crea credenziali → Chiave API*. Poi *Modifica chiave → Restrizioni API*: limita la chiave alla sola Cloud Text-to-Speech API.
+- *Fatturazione → Budget e avvisi*: crea un budget di 5 euro con avviso via email.
+
+La voce è `it-IT-Chirp3-HD-Charon` (maschile). Per cambiarla, modifica `google.voice_name` in `podcast.json` (altre voci maschili: Fenrir, Orus, Iapetus, Puck, Algieba).
 
 ### 2. Secret del repository
 GitHub → repository → *Settings → Secrets and variables → Actions → New repository secret*:
-- Nome: `ELEVENLABS_API_KEY`
-- Valore: la chiave API di ElevenLabs
+- Nome: `GOOGLE_TTS_API_KEY`
+- Valore: la chiave API di Google
 
 ### 3. `podcast.json`
-Sostituisci i valori `DA_COMPILARE`:
-- `owner_name`, `owner_email`: il tuo nome e l'email che riceverà il codice di verifica di Spotify (compare nel feed pubblico).
-- `site_url`: `https://<username>.github.io/cv-intelligence-daily`
-- `elevenlabs.voice_id`: il Voice ID.
+Già compilato. Per passare a ElevenLabs: `tts_provider: "elevenlabs"`, `elevenlabs.voice_id` e il secret `ELEVENLABS_API_KEY`.
 
 ### 4. GitHub Pages
 *Settings → Pages → Build and deployment*: Source **Deploy from a branch**, Branch **main**, cartella **/docs**. Dopo un minuto il feed è su `https://<username>.github.io/cv-intelligence-daily/feed.xml`.
 
 ### 5. Prova
-*Actions → Genera episodio → Run workflow* con **Prova senza ElevenLabs** spuntato: verifica che tutto giri senza consumare caratteri. Poi rilancialo senza spunta: genera il primo episodio vero.
+*Actions → Genera episodio → Run workflow* con **Prova senza sintesi vocale** spuntato: verifica che tutto giri senza consumare caratteri. Poi rilancialo senza spunta: genera il primo episodio vero.
 
 ### 6. Spotify
 Su [creators.spotify.com](https://creators.spotify.com) → *Get started* → *Find an existing show* / *Add your podcast via RSS*, incolla l'indirizzo del feed e inserisci il codice che arriva all'email di `owner_email`. Poi segui il podcast dalla tua app.
@@ -44,4 +45,4 @@ Su [creators.spotify.com](https://creators.spotify.com) → *Get started* → *F
 
 ## Costi
 
-Ogni episodio è circa 17.000–19.000 caratteri, cioè circa 400.000 caratteri al mese. Con il modello `eleven_multilingual_v2` serve il piano ElevenLabs Pro. GitHub, GitHub Pages e Spotify for Creators sono gratuiti.
+Ogni episodio è circa 17.000–19.000 caratteri, cioè circa 400.000 caratteri al mese. Le voci Chirp 3 HD di Google hanno 1 milione di caratteri gratuiti al mese: il podcast resta dentro la quota gratuita. GitHub, GitHub Pages e Spotify for Creators sono gratuiti.

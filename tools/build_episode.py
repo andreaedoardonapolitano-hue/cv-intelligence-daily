@@ -9,10 +9,12 @@ Per ogni script in scripts/AAAA-MM-GG.md non ancora pubblicato:
 Uso:
   python tools/build_episode.py            # usa l'API ElevenLabs (serve ELEVENLABS_API_KEY)
   python tools/build_episode.py --dry-run  # audio muto di prova, nessuna chiamata API
+  Il servizio vocale (google o elevenlabs) si sceglie con tts_provider in podcast.json.
 """
 from __future__ import annotations
 
 import argparse
+import base64
 import html
 import json
 import os
@@ -116,7 +118,8 @@ def chunk_text(text: str, limit: int = CHUNK_LIMIT) -> list[str]:
 
 def synthesize(chunks: list[str], cfg: dict, out_dir: Path, dry_run: bool) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
-    el = cfg["elevenlabs"]
+    provider = cfg.get("tts_provider", "elevenlabs")
+    el = cfg.get("elevenlabs", {})
     files = []
     for i, chunk in enumerate(chunks):
         target = out_dir / f"part_{i:03d}.mp3"
@@ -125,6 +128,8 @@ def synthesize(chunks: list[str], cfg: dict, out_dir: Path, dry_run: bool) -> li
             run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i",
                  "anullsrc=r=44100:cl=mono", "-t", f"{seconds:.1f}",
                  "-b:a", "64k", str(target)])
+        elif provider == "google":
+            target.write_bytes(call_google(chunk, cfg["google"]))
         else:
             payload = {
                 "text": chunk,
@@ -158,6 +163,27 @@ def call_elevenlabs(payload: dict, el: dict) -> bytes:
             sys.exit("Errore non recuperabile da ElevenLabs (chiave, credito o voice_id).")
         time.sleep(10 * attempt)
     sys.exit("ElevenLabs non risponde dopo 4 tentativi.")
+
+
+def call_google(text: str, g: dict) -> bytes:
+    key = os.environ.get("GOOGLE_TTS_API_KEY")
+    if not key:
+        sys.exit("GOOGLE_TTS_API_KEY mancante: aggiungila nei secrets del repository.")
+    body = {
+        "input": {"text": text},
+        "voice": {"languageCode": g["language_code"], "name": g["voice_name"]},
+        "audioConfig": {"audioEncoding": "MP3", "speakingRate": g.get("speaking_rate", 1.0)},
+    }
+    url = "https://texttospeech.googleapis.com/v1/text:synthesize"
+    for attempt in range(1, 5):
+        resp = requests.post(url, params={"key": key}, json=body, timeout=180)
+        if resp.ok:
+            return base64.b64decode(resp.json()["audioContent"])
+        print(f"  Google TTS ha risposto {resp.status_code}: {resp.text[:300]}")
+        if resp.status_code in (400, 401, 403, 404):
+            sys.exit("Errore non recuperabile da Google TTS (chiave, API non attiva o voce errata).")
+        time.sleep(10 * attempt)
+    sys.exit("Google TTS non risponde dopo 4 tentativi.")
 
 
 def concat(parts: list[Path], target: Path) -> None:
@@ -262,7 +288,9 @@ def main() -> None:
                 continue
             print(f"Episodio {script['date']}: {script['title']}")
             text = clean_for_speech(script["spoken"])
-            chunks = chunk_text(text)
+            # Google accetta al massimo 5.000 byte per richiesta: blocchi più corti
+            limit = 1800 if cfg.get("tts_provider") == "google" else CHUNK_LIMIT
+            chunks = chunk_text(text, limit)
             parts = synthesize(chunks, cfg, BUILD_DIR / script["date"], args.dry_run)
             mp3 = BUILD_DIR / f"cvid-{script['date']}.mp3"
             concat(parts, mp3)

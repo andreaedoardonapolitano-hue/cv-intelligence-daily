@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Prova senza ElevenLabs (audio muto)"
+        description: "Prova senza sintesi vocale (audio muto)"
         type: boolean
         default: false
 
@@ -37,6 +37,7 @@ jobs:
       - name: Genera audio e feed
         id: build
         env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then

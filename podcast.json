@@ -10,6 +10,12 @@
   "subcategory": "Management",
   "explicit": false,
   "site_url": "https://andreaedoardonapolitano-hue.github.io/cv-intelligence-daily",
+  "tts_provider": "google",
+  "google": {
+    "language_code": "it-IT",
+    "voice_name": "it-IT-Chirp3-HD-Charon",
+    "speaking_rate": 1.0
+  },
   "elevenlabs": {
     "voice_id": "DA_COMPILARE",
     "model_id": "eleven_multilingual_v2",
