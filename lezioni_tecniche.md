@@ -6,7 +6,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] XCURSOR 13: basamento in CGI e iniezione common rail a 2.500 bar (2026-10-05)
 - [x] S-Way: trasmissione automatizzata e guida predittiva (cambio, Eco-roll, cruise predittivo da topografia) (2026-10-05)
 - [x] Post-trattamento HI-eSCR: chimica dell'SCR, AdBlue, DPF e rigenerazione (2026-10-06)
-- [ ] Turbocompressore e air handling per il downspeeding: geometria, wastegate, risposta in transitorio
+- [x] Turbocompressore e air handling per il downspeeding: geometria, wastegate, risposta in transitorio (2026-10-07)
 - [ ] Aerodinamica della cabina S-Way: CdA, deflettori, effetto sul consumo a 85 km/h
 - [ ] Daily: telaio a longheroni, sospensioni Air-Pro e portata fino a 7,2 tonnellate
 - [ ] eDaily: batterie modulari, ePTO e gestione termica
