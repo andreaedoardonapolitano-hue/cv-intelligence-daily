@@ -7,7 +7,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] S-Way: trasmissione automatizzata e guida predittiva (cambio, Eco-roll, cruise predittivo da topografia) (2026-10-05)
 - [x] Post-trattamento HI-eSCR: chimica dell'SCR, AdBlue, DPF e rigenerazione (2026-10-06)
 - [x] Turbocompressore e air handling per il downspeeding: geometria, wastegate, risposta in transitorio (2026-10-07)
-- [ ] Aerodinamica della cabina S-Way: CdA, deflettori, effetto sul consumo a 85 km/h
+- [x] Aerodinamica della cabina S-Way: CdA, deflettori, effetto sul consumo a 85 km/h (2026-10-08)
 - [ ] Daily: telaio a longheroni, sospensioni Air-Pro e portata fino a 7,2 tonnellate
 - [ ] eDaily: batterie modulari, ePTO e gestione termica
 - [ ] Motori a gas naturale: ciclo Otto, catalizzatore a tre vie, LNG contro CNG
