@@ -10,7 +10,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Aerodinamica della cabina S-Way: CdA, deflettori, effetto sul consumo a 85 km/h (2026-10-08)
 - [x] Daily: telaio a longheroni, sospensioni Air-Pro e portata fino a 7,2 tonnellate (2026-10-09)
 - [x] eDaily: batterie modulari, ePTO e gestione termica (2026-10-12)
-- [ ] Motori a gas naturale: ciclo Otto, catalizzatore a tre vie, LNG contro CNG
+- [x] Motori a gas naturale: ciclo Otto, catalizzatore a tre vie, LNG contro CNG (2026-10-13)
 - [ ] Freno motore e retarder: come si ottiene la potenza frenante su un 13 litri
 - [ ] S-eWay: architettura dell'assale elettrico e taglie di batteria
 - [ ] Celle a combustibile e motore a idrogeno: due strade per l'H2 a confronto
