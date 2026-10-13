@@ -11,7 +11,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Daily: telaio a longheroni, sospensioni Air-Pro e portata fino a 7,2 tonnellate (2026-10-09)
 - [x] eDaily: batterie modulari, ePTO e gestione termica (2026-10-12)
 - [x] Motori a gas naturale: ciclo Otto, catalizzatore a tre vie, LNG contro CNG (2026-10-13)
-- [ ] Freno motore e retarder: come si ottiene la potenza frenante su un 13 litri
+- [x] Freno motore e retarder: come si ottiene la potenza frenante su un 13 litri (2026-10-14)
 - [ ] S-eWay: architettura dell'assale elettrico e taglie di batteria
 - [ ] Celle a combustibile e motore a idrogeno: due strade per l'H2 a confronto
 - [ ] Connettività e OTA: architettura elettronica, gateway e sicurezza informatica
