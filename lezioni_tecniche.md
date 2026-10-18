@@ -14,7 +14,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Freno motore e retarder: come si ottiene la potenza frenante su un 13 litri (2026-10-14)
 - [x] S-eWay: architettura dell'assale elettrico e taglie di batteria (2026-10-15)
 - [x] Celle a combustibile e motore a idrogeno: due strade per l'H2 a confronto (2026-10-16)
-- [ ] Connettività e OTA: architettura elettronica, gateway e sicurezza informatica
+- [x] Connettività e OTA: architettura elettronica, gateway e sicurezza informatica (2026-10-19)
 - [ ] NEF / F28: motori compatti FPT per off-road e Stage V
 - [ ] Cursor 16: perché un 16 litri, e dove ha senso
 - [ ] Bus: piattaforma Crossway e architettura del Streetway/Urbanway elettrico
