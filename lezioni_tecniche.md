@@ -15,7 +15,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] S-eWay: architettura dell'assale elettrico e taglie di batteria (2026-10-15)
 - [x] Celle a combustibile e motore a idrogeno: due strade per l'H2 a confronto (2026-10-16)
 - [x] Connettività e OTA: architettura elettronica, gateway e sicurezza informatica (2026-10-19)
-- [ ] NEF / F28: motori compatti FPT per off-road e Stage V
+- [x] NEF / F28: motori compatti FPT per off-road e Stage V (2026-10-20)
 - [ ] Cursor 16: perché un 16 litri, e dove ha senso
 - [ ] Bus: piattaforma Crossway e architettura del Streetway/Urbanway elettrico
 - [ ] ADAS sui pesanti: frenata di emergenza, mantenimento corsia, regolamento europeo GSR
