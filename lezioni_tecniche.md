@@ -17,7 +17,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Connettività e OTA: architettura elettronica, gateway e sicurezza informatica (2026-10-19)
 - [x] NEF / F28: motori compatti FPT per off-road e Stage V (2026-10-20)
 - [x] Cursor 16: perché un 16 litri, e dove ha senso (2026-10-21)
-- [ ] Bus: piattaforma Crossway e architettura del Streetway/Urbanway elettrico
+- [x] Bus: piattaforma Crossway e architettura del Streetway/Urbanway elettrico (2026-10-22)
 - [ ] ADAS sui pesanti: frenata di emergenza, mantenimento corsia, regolamento europeo GSR
 - [ ] Ammortizzatori e sospensioni pneumatiche: ECAS e livellamento
 - [ ] Impianto frenante EBS e dischi pneumatici
