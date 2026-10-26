@@ -19,7 +19,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Cursor 16: perché un 16 litri, e dove ha senso (2026-10-21)
 - [x] Bus: piattaforma Crossway e architettura del Streetway/Urbanway elettrico (2026-10-22)
 - [x] ADAS sui pesanti: frenata di emergenza, mantenimento corsia, regolamento europeo GSR (2026-10-23)
-- [ ] Ammortizzatori e sospensioni pneumatiche: ECAS e livellamento
+- [x] Ammortizzatori e sospensioni pneumatiche: ECAS e livellamento (2026-10-26)
 - [ ] Impianto frenante EBS e dischi pneumatici
 - [ ] Assali e differenziali: rapporti al ponte e loro effetto su consumo e trazione
 - [ ] Remanufacturing FPT: processo, garanzia, economia del ricondizionato
