@@ -20,6 +20,6 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Bus: piattaforma Crossway e architettura del Streetway/Urbanway elettrico (2026-10-22)
 - [x] ADAS sui pesanti: frenata di emergenza, mantenimento corsia, regolamento europeo GSR (2026-10-23)
 - [x] Ammortizzatori e sospensioni pneumatiche: ECAS e livellamento (2026-10-26)
-- [ ] Impianto frenante EBS e dischi pneumatici
+- [x] Impianto frenante EBS e dischi pneumatici (2026-10-27)
 - [ ] Assali e differenziali: rapporti al ponte e loro effetto su consumo e trazione
 - [ ] Remanufacturing FPT: processo, garanzia, economia del ricondizionato
