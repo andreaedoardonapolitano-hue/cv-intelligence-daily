@@ -21,5 +21,5 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] ADAS sui pesanti: frenata di emergenza, mantenimento corsia, regolamento europeo GSR (2026-10-23)
 - [x] Ammortizzatori e sospensioni pneumatiche: ECAS e livellamento (2026-10-26)
 - [x] Impianto frenante EBS e dischi pneumatici (2026-10-27)
-- [ ] Assali e differenziali: rapporti al ponte e loro effetto su consumo e trazione
+- [x] Assali e differenziali: rapporti al ponte e loro effetto su consumo e trazione (2026-10-28)
 - [ ] Remanufacturing FPT: processo, garanzia, economia del ricondizionato
