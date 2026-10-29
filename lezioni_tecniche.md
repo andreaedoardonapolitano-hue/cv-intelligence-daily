@@ -22,4 +22,6 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Ammortizzatori e sospensioni pneumatiche: ECAS e livellamento (2026-10-26)
 - [x] Impianto frenante EBS e dischi pneumatici (2026-10-27)
 - [x] Assali e differenziali: rapporti al ponte e loro effetto su consumo e trazione (2026-10-28)
-- [ ] Remanufacturing FPT: processo, garanzia, economia del ricondizionato
+- [x] Remanufacturing FPT: processo, garanzia, economia del ricondizionato (2026-10-29)
+- [ ] Raffreddamento del motore: radiatore, ventola viscostatica e pompa dell'acqua a comando elettrico
+- [ ] Pneumatici per pesanti: resistenza al rotolamento, etichetta europea ed effetto sul TCO
