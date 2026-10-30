@@ -23,5 +23,5 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Impianto frenante EBS e dischi pneumatici (2026-10-27)
 - [x] Assali e differenziali: rapporti al ponte e loro effetto su consumo e trazione (2026-10-28)
 - [x] Remanufacturing FPT: processo, garanzia, economia del ricondizionato (2026-10-29)
-- [ ] Raffreddamento del motore: radiatore, ventola viscostatica e pompa dell'acqua a comando elettrico
+- [x] Raffreddamento del motore: radiatore, ventola viscostatica e pompa dell'acqua a comando elettrico (2026-10-30)
 - [ ] Pneumatici per pesanti: resistenza al rotolamento, etichetta europea ed effetto sul TCO
