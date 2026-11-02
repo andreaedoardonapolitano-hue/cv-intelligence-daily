@@ -25,4 +25,5 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Remanufacturing FPT: processo, garanzia, economia del ricondizionato (2026-10-29)
 - [x] Raffreddamento del motore: radiatore, ventola viscostatica e pompa dell'acqua a comando elettrico (2026-10-30)
 - [x] Pneumatici per pesanti: resistenza al rotolamento, etichetta europea ed effetto sul TCO (2026-11-02)
-- [ ] Cambio automatico del Daily: Hi-Matic a otto marce, convertitore di coppia e confronto con il manuale su consumo e manutenzione
+- [x] Cambio automatico del Daily: Hi-Matic a otto marce, convertitore di coppia e confronto con il manuale su consumo e manutenzione (2026-11-03)
+- [ ] Batterie per veicoli commerciali: chimica LFP contro NMC, densità di energia, durata e costo
