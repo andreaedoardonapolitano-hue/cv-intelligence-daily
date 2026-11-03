@@ -26,4 +26,7 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Raffreddamento del motore: radiatore, ventola viscostatica e pompa dell'acqua a comando elettrico (2026-10-30)
 - [x] Pneumatici per pesanti: resistenza al rotolamento, etichetta europea ed effetto sul TCO (2026-11-02)
 - [x] Cambio automatico del Daily: Hi-Matic a otto marce, convertitore di coppia e confronto con il manuale su consumo e manutenzione (2026-11-03)
-- [ ] Batterie per veicoli commerciali: chimica LFP contro NMC, densità di energia, durata e costo
+- [x] Batterie per veicoli commerciali: chimica LFP contro NMC, densità di energia, durata e costo (2026-11-04)
+- [ ] Ricarica dei veicoli commerciali: CCS, standard MCS per la ricarica in megawatt e gestione termica della batteria in carica
+- [ ] Motori elettrici di trazione: sincroni a magneti permanenti contro asincroni, efficienza e terre rare
+- [ ] Frenata rigenerativa sui pesanti: quanta energia si recupera e come si integra con freno motore ed EBS
