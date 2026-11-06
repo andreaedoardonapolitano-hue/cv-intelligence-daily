@@ -28,5 +28,5 @@ Si possono aggiungere argomenti in fondo in qualsiasi momento.
 - [x] Cambio automatico del Daily: Hi-Matic a otto marce, convertitore di coppia e confronto con il manuale su consumo e manutenzione (2026-11-03)
 - [x] Batterie per veicoli commerciali: chimica LFP contro NMC, densità di energia, durata e costo (2026-11-04)
 - [x] Ricarica dei veicoli commerciali: CCS, standard MCS per la ricarica in megawatt e gestione termica della batteria in carica (2026-11-05)
-- [ ] Motori elettrici di trazione: sincroni a magneti permanenti contro asincroni, efficienza e terre rare
+- [x] Motori elettrici di trazione: sincroni a magneti permanenti contro asincroni, efficienza e terre rare (2026-11-06)
 - [ ] Frenata rigenerativa sui pesanti: quanta energia si recupera e come si integra con freno motore ed EBS
